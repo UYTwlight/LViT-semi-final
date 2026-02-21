@@ -1,0 +1,50 @@
+# Requirements for LViT with Modular Ablation Study
+# Installation: pip install -r requirements.txt
+
+# Core deep learning
+torch>=1.10.0
+torchvision>=0.11.0
+tensorboardX>=2.5
+tensorboard>=2.8.0
+
+# Transformers for BioBERT
+transformers>=4.25.0
+tokenizers>=0.13.0
+
+# Image processing
+opencv-python>=4.5.0
+Pillow>=9.0.0
+imageio>=2.9.0
+
+# Scientific computing
+numpy>=1.21.0
+scipy>=1.7.0
+scikit-learn>=1.0.0
+scikit-image>=0.19.0
+
+# Data handling
+pandas>=1.3.0
+openpyxl>=3.0.0  # For reading Excel text prompts
+
+# Visualization
+matplotlib>=3.4.0
+seaborn>=0.11.0
+
+# Utilities
+tqdm>=4.62.0
+ml_collections>=0.1.0
+
+# Model analysis
+thop>=0.1.1  # For FLOPs counting
+
+# Optional: For MedSAM (future)
+# segment-anything>=1.0  # Uncomment when implementing MedSAM
+
+# Optional: For better performance
+# albumentations>=1.3.0  # Advanced augmentations
+# timm>=0.6.0  # Pretrained models library
+
+# Development tools (optional)
+# pytest>=7.0.0
+# black>=22.0.0
+# flake8>=4.0.0

@@ -1,0 +1,12 @@
+Semi-supervised mode: 6 labeled, 18 unlabeled
+LViT
+transformer head num: 4
+transformer layers num: 4
+transformer expand ratio: 4
+EMA decay: 0.99, LV Loss weight: 0.1
+log dir: 
+
+========= Epoch [1/2001] =========
+Test_session_02.16_13h23
+Training with batch size : 2
+Consistency weight: 0.0067

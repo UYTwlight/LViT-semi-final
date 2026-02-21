@@ -1,0 +1,263 @@
+Semi-supervised mode: 6 labeled, 18 unlabeled
+LViT
+transformer head num: 4
+transformer layers num: 4
+transformer expand ratio: 4
+EMA decay: 0.99, LV Loss weight: 0.1
+log dir: 
+
+========= Epoch [1/2001] =========
+Test_session_02.16_13h27
+Training with batch size : 2
+Consistency weight: 0.0067
+   [Train] Epoch: [1][1/9]  Loss:0.645 (Avg 0.6449) L_sup:0.596 L_unsup:0.584 L_LV:0.450 IoU:0.114 (Avg 0.1136) Dice:0.2029 (Avg 0.2029) LR 1.00e-03 (AvgTime 1.9)
+   [Train] Epoch: [1][2/9]  Loss:0.580 (Avg 0.6123) L_sup:0.530 L_unsup:0.704 L_LV:0.451 IoU:0.277 (Avg 0.1951) Dice:0.4332 (Avg 0.3181) LR 1.00e-03 (AvgTime 1.0)
+   [Train] Epoch: [1][3/9]  Loss:0.603 (Avg 0.6092) L_sup:0.550 L_unsup:0.820 L_LV:0.474 IoU:0.283 (Avg 0.2244) Dice:0.4255 (Avg 0.3539) LR 1.00e-03 (AvgTime 0.7)
+   [Train] Epoch: [1][4/9]  Loss:0.515 (Avg 0.5856) L_sup:0.462 L_unsup:0.791 L_LV:0.469 IoU:0.433 (Avg 0.2765) Dice:0.5964 (Avg 0.4145) LR 1.00e-03 (AvgTime 0.8)
+   [Train] Epoch: [1][5/9]  Loss:0.534 (Avg 0.5753) L_sup:0.480 L_unsup:0.806 L_LV:0.484 IoU:0.411 (Avg 0.3034) Dice:0.5816 (Avg 0.4479) LR 1.00e-03 (AvgTime 0.6)
+   [Train] Epoch: [1][6/9]  Loss:0.451 (Avg 0.5545) L_sup:0.398 L_unsup:0.823 L_LV:0.476 IoU:0.562 (Avg 0.3465) Dice:0.7188 (Avg 0.4931) LR 1.00e-03 (AvgTime 0.6)
+   [Train] Epoch: [1][7/9]  Loss:0.414 (Avg 0.5345) L_sup:0.359 L_unsup:0.758 L_LV:0.506 IoU:0.575 (Avg 0.3791) Dice:0.7300 (Avg 0.5269) LR 1.00e-03 (AvgTime 0.6)
+   [Train] Epoch: [1][8/9]  Loss:0.424 (Avg 0.5207) L_sup:0.368 L_unsup:0.917 L_LV:0.497 IoU:0.563 (Avg 0.4021) Dice:0.7198 (Avg 0.5510) LR 1.00e-03 (AvgTime 0.6)
+   [Train] Epoch: [1][9/9]  Loss:0.453 (Avg 0.5132) L_sup:0.399 L_unsup:0.681 L_LV:0.493 IoU:0.493 (Avg 0.4122) Dice:0.6596 (Avg 0.5631) LR 1.00e-03 (AvgTime 0.5)
+   Epoch Summary: L_sup=0.4602, L_unsup=0.7648, L_LV=0.4777
+Validation
+   [Val] Epoch: [1][1/3]  Loss:0.645 (Avg 0.6451) IoU:0.185 (Avg 0.1847) Dice:0.3081 (Avg 0.3081) (AvgTime 0.9)   
+   [Val] Epoch: [1][2/3]  Loss:0.529 (Avg 0.5873) IoU:0.407 (Avg 0.2958) Dice:0.5780 (Avg 0.4430) (AvgTime 0.5)   
+   [Val] Epoch: [1][3/3]  Loss:0.617 (Avg 0.5972) IoU:0.219 (Avg 0.2703) Dice:0.3594 (Avg 0.4151) (AvgTime 0.3)   
+	 early_stopping_count: 0/50
+
+========= Epoch [2/2001] =========
+Test_session_02.16_13h27
+Training with batch size : 2
+Consistency weight: 0.0076
+   [Train] Epoch: [2][1/9]  Loss:0.404 (Avg 0.4036) L_sup:0.347 L_unsup:0.851 L_LV:0.498 IoU:0.572 (Avg 0.5724) Dice:0.7277 (Avg 0.7277) LR 9.78e-04 (AvgTime 1.1)
+   [Train] Epoch: [2][2/9]  Loss:0.377 (Avg 0.3901) L_sup:0.320 L_unsup:0.781 L_LV:0.511 IoU:0.613 (Avg 0.5927) Dice:0.7600 (Avg 0.7439) LR 9.78e-04 (AvgTime 0.6)
+   [Train] Epoch: [2][3/9]  Loss:0.430 (Avg 0.4034) L_sup:0.374 L_unsup:0.646 L_LV:0.506 IoU:0.525 (Avg 0.5701) Dice:0.6882 (Avg 0.7253) LR 9.78e-04 (AvgTime 0.5)
+   [Train] Epoch: [2][4/9]  Loss:0.368 (Avg 0.3945) L_sup:0.312 L_unsup:0.697 L_LV:0.506 IoU:0.606 (Avg 0.5790) Dice:0.7534 (Avg 0.7323) LR 9.78e-04 (AvgTime 0.6)
+   [Train] Epoch: [2][5/9]  Loss:0.443 (Avg 0.4042) L_sup:0.385 L_unsup:0.673 L_LV:0.528 IoU:0.511 (Avg 0.5654) Dice:0.6762 (Avg 0.7211) LR 9.78e-04 (AvgTime 0.5)
+   [Train] Epoch: [2][6/9]  Loss:0.380 (Avg 0.4003) L_sup:0.323 L_unsup:0.656 L_LV:0.527 IoU:0.595 (Avg 0.5704) Dice:0.7459 (Avg 0.7252) LR 9.78e-04 (AvgTime 0.4)
+   [Train] Epoch: [2][7/9]  Loss:0.344 (Avg 0.3922) L_sup:0.287 L_unsup:0.545 L_LV:0.527 IoU:0.629 (Avg 0.5787) Dice:0.7712 (Avg 0.7318) LR 9.78e-04 (AvgTime 0.5)
+   [Train] Epoch: [2][8/9]  Loss:0.452 (Avg 0.3996) L_sup:0.395 L_unsup:0.490 L_LV:0.533 IoU:0.516 (Avg 0.5709) Dice:0.6806 (Avg 0.7254) LR 9.78e-04 (AvgTime 0.5)
+   [Train] Epoch: [2][9/9]  Loss:0.350 (Avg 0.3942) L_sup:0.294 L_unsup:0.508 L_LV:0.520 IoU:0.624 (Avg 0.5768) Dice:0.7682 (Avg 0.7301) LR 9.78e-04 (AvgTime 0.4)
+   Epoch Summary: L_sup=0.3375, L_unsup=0.6496, L_LV=0.5174
+Validation
+   [Val] Epoch: [2][1/3]  Loss:0.540 (Avg 0.5400) IoU:0.446 (Avg 0.4457) Dice:0.6159 (Avg 0.6159) (AvgTime 1.0)   
+   [Val] Epoch: [2][2/3]  Loss:0.537 (Avg 0.5385) IoU:0.277 (Avg 0.3615) Dice:0.3651 (Avg 0.4905) (AvgTime 0.5)   
+   [Val] Epoch: [2][3/3]  Loss:0.611 (Avg 0.5627) IoU:0.334 (Avg 0.3523) Dice:0.4985 (Avg 0.4932) (AvgTime 0.3)   
+	 early_stopping_count: 1/50
+
+========= Epoch [3/2001] =========
+Test_session_02.16_13h27
+Training with batch size : 2
+Consistency weight: 0.0086
+   [Train] Epoch: [3][1/9]  Loss:0.403 (Avg 0.4030) L_sup:0.348 L_unsup:0.400 L_LV:0.515 IoU:0.539 (Avg 0.5388) Dice:0.6965 (Avg 0.6965) LR 9.14e-04 (AvgTime 1.2)
+   [Train] Epoch: [3][2/9]  Loss:0.402 (Avg 0.4023) L_sup:0.345 L_unsup:0.460 L_LV:0.528 IoU:0.574 (Avg 0.5562) Dice:0.7289 (Avg 0.7127) LR 9.14e-04 (AvgTime 0.6)
+   [Train] Epoch: [3][3/9]  Loss:0.332 (Avg 0.3790) L_sup:0.277 L_unsup:0.260 L_LV:0.537 IoU:0.637 (Avg 0.5833) Dice:0.7760 (Avg 0.7338) LR 9.14e-04 (AvgTime 0.5)
+   [Train] Epoch: [3][4/9]  Loss:0.395 (Avg 0.3829) L_sup:0.339 L_unsup:0.394 L_LV:0.523 IoU:0.557 (Avg 0.5767) Dice:0.7146 (Avg 0.7290) LR 9.14e-04 (AvgTime 0.6)
+   [Train] Epoch: [3][5/9]  Loss:0.344 (Avg 0.3751) L_sup:0.287 L_unsup:0.382 L_LV:0.538 IoU:0.624 (Avg 0.5861) Dice:0.7678 (Avg 0.7368) LR 9.14e-04 (AvgTime 0.5)
+   [Train] Epoch: [3][6/9]  Loss:0.341 (Avg 0.3694) L_sup:0.285 L_unsup:0.302 L_LV:0.535 IoU:0.661 (Avg 0.5986) Dice:0.7928 (Avg 0.7461) LR 9.14e-04 (AvgTime 0.4)
+   [Train] Epoch: [3][7/9]  Loss:0.414 (Avg 0.3758) L_sup:0.358 L_unsup:0.320 L_LV:0.533 IoU:0.541 (Avg 0.5904) Dice:0.7019 (Avg 0.7398) LR 9.14e-04 (AvgTime 0.5)
+   [Train] Epoch: [3][8/9]  Loss:0.307 (Avg 0.3672) L_sup:0.252 L_unsup:0.198 L_LV:0.528 IoU:0.689 (Avg 0.6027) Dice:0.8145 (Avg 0.7491) LR 9.14e-04 (AvgTime 0.5)
+   [Train] Epoch: [3][9/9]  Loss:0.348 (Avg 0.3651) L_sup:0.293 L_unsup:0.211 L_LV:0.541 IoU:0.637 (Avg 0.6066) Dice:0.7779 (Avg 0.7523) LR 9.14e-04 (AvgTime 0.4)
+   Epoch Summary: L_sup=0.3093, L_unsup=0.3252, L_LV=0.5307
+Validation
+   [Val] Epoch: [3][1/3]  Loss:0.515 (Avg 0.5148) IoU:0.447 (Avg 0.4470) Dice:0.6094 (Avg 0.6094) (AvgTime 0.9)   
+   [Val] Epoch: [3][2/3]  Loss:0.558 (Avg 0.5363) IoU:0.284 (Avg 0.3657) Dice:0.3737 (Avg 0.4915) (AvgTime 0.5)   
+   [Val] Epoch: [3][3/3]  Loss:0.517 (Avg 0.5297) IoU:0.463 (Avg 0.3980) Dice:0.6325 (Avg 0.5385) (AvgTime 0.3)   
+	 early_stopping_count: 2/50
+
+========= Epoch [4/2001] =========
+Test_session_02.16_13h27
+Training with batch size : 2
+Consistency weight: 0.0097
+   [Train] Epoch: [4][1/9]  Loss:0.388 (Avg 0.3879) L_sup:0.332 L_unsup:0.312 L_LV:0.531 IoU:0.568 (Avg 0.5675) Dice:0.7238 (Avg 0.7238) LR 8.15e-04 (AvgTime 1.2)
+   [Train] Epoch: [4][2/9]  Loss:0.288 (Avg 0.3380) L_sup:0.231 L_unsup:0.190 L_LV:0.549 IoU:0.708 (Avg 0.6377) Dice:0.8287 (Avg 0.7763) LR 8.15e-04 (AvgTime 0.6)
+   [Train] Epoch: [4][3/9]  Loss:0.352 (Avg 0.3428) L_sup:0.296 L_unsup:0.155 L_LV:0.550 IoU:0.628 (Avg 0.6344) Dice:0.7706 (Avg 0.7744) LR 8.15e-04 (AvgTime 0.5)
+   [Train] Epoch: [4][4/9]  Loss:0.369 (Avg 0.3494) L_sup:0.313 L_unsup:0.138 L_LV:0.554 IoU:0.609 (Avg 0.6281) Dice:0.7571 (Avg 0.7701) LR 8.15e-04 (AvgTime 0.6)
+   [Train] Epoch: [4][5/9]  Loss:0.362 (Avg 0.3519) L_sup:0.307 L_unsup:0.124 L_LV:0.533 IoU:0.600 (Avg 0.6226) Dice:0.7458 (Avg 0.7652) LR 8.15e-04 (AvgTime 0.5)
+   [Train] Epoch: [4][6/9]  Loss:0.323 (Avg 0.3470) L_sup:0.267 L_unsup:0.096 L_LV:0.546 IoU:0.649 (Avg 0.6269) Dice:0.7869 (Avg 0.7688) LR 8.15e-04 (AvgTime 0.5)
+   [Train] Epoch: [4][7/9]  Loss:0.364 (Avg 0.3494) L_sup:0.309 L_unsup:0.085 L_LV:0.540 IoU:0.583 (Avg 0.6207) Dice:0.7366 (Avg 0.7642) LR 8.15e-04 (AvgTime 0.5)
+   [Train] Epoch: [4][8/9]  Loss:0.302 (Avg 0.3435) L_sup:0.246 L_unsup:0.086 L_LV:0.554 IoU:0.698 (Avg 0.6304) Dice:0.8209 (Avg 0.7713) LR 8.15e-04 (AvgTime 0.5)
+   [Train] Epoch: [4][9/9]  Loss:0.344 (Avg 0.3435) L_sup:0.290 L_unsup:0.062 L_LV:0.531 IoU:0.635 (Avg 0.6308) Dice:0.7756 (Avg 0.7718) LR 8.15e-04 (AvgTime 0.4)
+   Epoch Summary: L_sup=0.2879, L_unsup=0.1386, L_LV=0.5431
+Validation
+   [Val] Epoch: [4][1/3]  Loss:0.505 (Avg 0.5048) IoU:0.569 (Avg 0.5692) Dice:0.7254 (Avg 0.7254) (AvgTime 0.9)   
+   [Val] Epoch: [4][2/3]  Loss:0.454 (Avg 0.4791) IoU:0.562 (Avg 0.5657) Dice:0.7197 (Avg 0.7226) (AvgTime 0.5)   
+   [Val] Epoch: [4][3/3]  Loss:0.582 (Avg 0.5133) IoU:0.245 (Avg 0.4587) Dice:0.3451 (Avg 0.5967) (AvgTime 0.3)   
+	 early_stopping_count: 3/50
+
+========= Epoch [5/2001] =========
+Test_session_02.16_13h27
+Training with batch size : 2
+Consistency weight: 0.0110
+   [Train] Epoch: [5][1/9]  Loss:0.341 (Avg 0.3410) L_sup:0.287 L_unsup:0.058 L_LV:0.538 IoU:0.656 (Avg 0.6561) Dice:0.7891 (Avg 0.7891) LR 6.89e-04 (AvgTime 1.2)
+   [Train] Epoch: [5][2/9]  Loss:0.350 (Avg 0.3456) L_sup:0.295 L_unsup:0.073 L_LV:0.542 IoU:0.622 (Avg 0.6390) Dice:0.7661 (Avg 0.7776) LR 6.89e-04 (AvgTime 0.6)
+   [Train] Epoch: [5][3/9]  Loss:0.325 (Avg 0.3388) L_sup:0.271 L_unsup:0.059 L_LV:0.537 IoU:0.642 (Avg 0.6399) Dice:0.7809 (Avg 0.7787) LR 6.89e-04 (AvgTime 0.5)
+   [Train] Epoch: [5][4/9]  Loss:0.277 (Avg 0.3233) L_sup:0.224 L_unsup:0.038 L_LV:0.530 IoU:0.709 (Avg 0.6572) Dice:0.8292 (Avg 0.7913) LR 6.89e-04 (AvgTime 0.6)
+   [Train] Epoch: [5][5/9]  Loss:0.389 (Avg 0.3365) L_sup:0.332 L_unsup:0.056 L_LV:0.564 IoU:0.595 (Avg 0.6447) Dice:0.7459 (Avg 0.7822) LR 6.89e-04 (AvgTime 0.5)
+   [Train] Epoch: [5][6/9]  Loss:0.321 (Avg 0.3340) L_sup:0.267 L_unsup:0.047 L_LV:0.535 IoU:0.643 (Avg 0.6444) Dice:0.7821 (Avg 0.7822) LR 6.89e-04 (AvgTime 0.4)
+   [Train] Epoch: [5][7/9]  Loss:0.350 (Avg 0.3363) L_sup:0.296 L_unsup:0.043 L_LV:0.536 IoU:0.606 (Avg 0.6390) Dice:0.7545 (Avg 0.7783) LR 6.89e-04 (AvgTime 0.5)
+   [Train] Epoch: [5][8/9]  Loss:0.302 (Avg 0.3319) L_sup:0.246 L_unsup:0.049 L_LV:0.552 IoU:0.669 (Avg 0.6427) Dice:0.8012 (Avg 0.7811) LR 6.89e-04 (AvgTime 0.5)
+   [Train] Epoch: [5][9/9]  Loss:0.341 (Avg 0.3329) L_sup:0.284 L_unsup:0.046 L_LV:0.560 IoU:0.657 (Avg 0.6442) Dice:0.7884 (Avg 0.7819) LR 6.89e-04 (AvgTime 0.4)
+   Epoch Summary: L_sup=0.2780, L_unsup=0.0523, L_LV=0.5439
+Validation
+   [Val] Epoch: [5][1/3]  Loss:0.468 (Avg 0.4678) IoU:0.576 (Avg 0.5761) Dice:0.7310 (Avg 0.7310) (AvgTime 0.9)   
+   [Val] Epoch: [5][2/3]  Loss:0.576 (Avg 0.5218) IoU:0.234 (Avg 0.4050) Dice:0.3341 (Avg 0.5325) (AvgTime 0.5)   
+   [Val] Epoch: [5][3/3]  Loss:0.434 (Avg 0.4926) IoU:0.543 (Avg 0.4510) Dice:0.7034 (Avg 0.5895) (AvgTime 0.3)   
+	 early_stopping_count: 4/50
+
+========= Epoch [6/2001] =========
+Test_session_02.16_13h27
+Training with batch size : 2
+Consistency weight: 0.0123
+   [Train] Epoch: [6][1/9]  Loss:0.311 (Avg 0.3110) L_sup:0.255 L_unsup:0.052 L_LV:0.551 IoU:0.672 (Avg 0.6725) Dice:0.8027 (Avg 0.8027) LR 5.50e-04 (AvgTime 1.2)
+   [Train] Epoch: [6][2/9]  Loss:0.325 (Avg 0.3181) L_sup:0.271 L_unsup:0.045 L_LV:0.542 IoU:0.637 (Avg 0.6548) Dice:0.7780 (Avg 0.7904) LR 5.50e-04 (AvgTime 0.7)
+   [Train] Epoch: [6][3/9]  Loss:0.344 (Avg 0.3268) L_sup:0.290 L_unsup:0.038 L_LV:0.540 IoU:0.634 (Avg 0.6480) Dice:0.7762 (Avg 0.7856) LR 5.50e-04 (AvgTime 0.5)
+   [Train] Epoch: [6][4/9]  Loss:0.327 (Avg 0.3269) L_sup:0.271 L_unsup:0.043 L_LV:0.561 IoU:0.633 (Avg 0.6443) Dice:0.7753 (Avg 0.7831) LR 5.50e-04 (AvgTime 0.6)
+   [Train] Epoch: [6][5/9]  Loss:0.368 (Avg 0.3351) L_sup:0.311 L_unsup:0.059 L_LV:0.557 IoU:0.618 (Avg 0.6389) Dice:0.7635 (Avg 0.7792) LR 5.50e-04 (AvgTime 0.5)
+   [Train] Epoch: [6][6/9]  Loss:0.266 (Avg 0.3236) L_sup:0.210 L_unsup:0.048 L_LV:0.552 IoU:0.729 (Avg 0.6539) Dice:0.8429 (Avg 0.7898) LR 5.50e-04 (AvgTime 0.5)
+   [Train] Epoch: [6][7/9]  Loss:0.298 (Avg 0.3200) L_sup:0.242 L_unsup:0.046 L_LV:0.556 IoU:0.684 (Avg 0.6583) Dice:0.8110 (Avg 0.7928) LR 5.50e-04 (AvgTime 0.5)
+   [Train] Epoch: [6][8/9]  Loss:0.334 (Avg 0.3218) L_sup:0.279 L_unsup:0.049 L_LV:0.545 IoU:0.652 (Avg 0.6575) Dice:0.7885 (Avg 0.7923) LR 5.50e-04 (AvgTime 0.5)
+   [Train] Epoch: [6][9/9]  Loss:0.368 (Avg 0.3269) L_sup:0.311 L_unsup:0.044 L_LV:0.561 IoU:0.591 (Avg 0.6501) Dice:0.7429 (Avg 0.7868) LR 5.50e-04 (AvgTime 0.4)
+   Epoch Summary: L_sup=0.2711, L_unsup=0.0469, L_LV=0.5515
+Validation
+   [Val] Epoch: [6][1/3]  Loss:0.514 (Avg 0.5138) IoU:0.251 (Avg 0.2509) Dice:0.3498 (Avg 0.3498) (AvgTime 0.9)   
+   [Val] Epoch: [6][2/3]  Loss:0.404 (Avg 0.4586) IoU:0.512 (Avg 0.3813) Dice:0.6746 (Avg 0.5122) (AvgTime 0.5)   
+   [Val] Epoch: [6][3/3]  Loss:0.433 (Avg 0.4500) IoU:0.579 (Avg 0.4471) Dice:0.7331 (Avg 0.5859) (AvgTime 0.3)   
+	 Saving best model, mean dice increased from: 0.0000 to 0.5859
+	 Saving to MoNuSeg/LViT/Test_session_02.16_13h27/models/
+	 early_stopping_count: 0/50
+
+========= Epoch [7/2001] =========
+Test_session_02.16_13h27
+Training with batch size : 2
+Consistency weight: 0.0139
+   [Train] Epoch: [7][1/9]  Loss:0.310 (Avg 0.3102) L_sup:0.255 L_unsup:0.048 L_LV:0.544 IoU:0.658 (Avg 0.6580) Dice:0.7933 (Avg 0.7933) LR 4.11e-04 (AvgTime 1.1)
+   [Train] Epoch: [7][2/9]  Loss:0.314 (Avg 0.3120) L_sup:0.257 L_unsup:0.047 L_LV:0.556 IoU:0.693 (Avg 0.6757) Dice:0.8163 (Avg 0.8048) LR 4.11e-04 (AvgTime 0.6)
+   [Train] Epoch: [7][3/9]  Loss:0.321 (Avg 0.3149) L_sup:0.265 L_unsup:0.050 L_LV:0.550 IoU:0.646 (Avg 0.6658) Dice:0.7847 (Avg 0.7981) LR 4.11e-04 (AvgTime 0.5)
+   [Train] Epoch: [7][4/9]  Loss:0.317 (Avg 0.3153) L_sup:0.261 L_unsup:0.046 L_LV:0.551 IoU:0.644 (Avg 0.6605) Dice:0.7838 (Avg 0.7945) LR 4.11e-04 (AvgTime 0.6)
+   [Train] Epoch: [7][5/9]  Loss:0.290 (Avg 0.3103) L_sup:0.234 L_unsup:0.056 L_LV:0.553 IoU:0.705 (Avg 0.6693) Dice:0.8249 (Avg 0.8006) LR 4.11e-04 (AvgTime 0.5)
+   [Train] Epoch: [7][6/9]  Loss:0.328 (Avg 0.3132) L_sup:0.270 L_unsup:0.049 L_LV:0.569 IoU:0.654 (Avg 0.6668) Dice:0.7897 (Avg 0.7988) LR 4.11e-04 (AvgTime 0.4)
+   [Train] Epoch: [7][7/9]  Loss:0.346 (Avg 0.3178) L_sup:0.288 L_unsup:0.063 L_LV:0.565 IoU:0.608 (Avg 0.6583) Dice:0.7558 (Avg 0.7926) LR 4.11e-04 (AvgTime 0.5)
+   [Train] Epoch: [7][8/9]  Loss:0.266 (Avg 0.3114) L_sup:0.211 L_unsup:0.058 L_LV:0.544 IoU:0.729 (Avg 0.6671) Dice:0.8423 (Avg 0.7988) LR 4.11e-04 (AvgTime 0.5)
+   [Train] Epoch: [7][9/9]  Loss:0.351 (Avg 0.3158) L_sup:0.294 L_unsup:0.049 L_LV:0.567 IoU:0.635 (Avg 0.6635) Dice:0.7764 (Avg 0.7964) LR 4.11e-04 (AvgTime 0.4)
+   Epoch Summary: L_sup=0.2595, L_unsup=0.0517, L_LV=0.5555
+Validation
+   [Val] Epoch: [7][1/3]  Loss:0.517 (Avg 0.5167) IoU:0.355 (Avg 0.3546) Dice:0.4575 (Avg 0.4575) (AvgTime 0.9)   
+   [Val] Epoch: [7][2/3]  Loss:0.381 (Avg 0.4488) IoU:0.555 (Avg 0.4547) Dice:0.7134 (Avg 0.5854) (AvgTime 0.5)   
+   [Val] Epoch: [7][3/3]  Loss:0.406 (Avg 0.4345) IoU:0.636 (Avg 0.5150) Dice:0.7766 (Avg 0.6492) (AvgTime 0.3)   
+	 Saving best model, mean dice increased from: 0.5859 to 0.6492
+	 Saving to MoNuSeg/LViT/Test_session_02.16_13h27/models/
+	 early_stopping_count: 0/50
+
+========= Epoch [8/2001] =========
+Test_session_02.16_13h27
+Training with batch size : 2
+Consistency weight: 0.0156
+   [Train] Epoch: [8][1/9]  Loss:0.364 (Avg 0.3639) L_sup:0.307 L_unsup:0.046 L_LV:0.564 IoU:0.608 (Avg 0.6079) Dice:0.7560 (Avg 0.7560) LR 2.85e-04 (AvgTime 1.2)
+   [Train] Epoch: [8][2/9]  Loss:0.275 (Avg 0.3194) L_sup:0.220 L_unsup:0.061 L_LV:0.537 IoU:0.721 (Avg 0.6645) Dice:0.8367 (Avg 0.7964) LR 2.85e-04 (AvgTime 0.7)
+   [Train] Epoch: [8][3/9]  Loss:0.291 (Avg 0.3099) L_sup:0.234 L_unsup:0.051 L_LV:0.558 IoU:0.673 (Avg 0.6673) Dice:0.8043 (Avg 0.7990) LR 2.85e-04 (AvgTime 0.5)
+   [Train] Epoch: [8][4/9]  Loss:0.294 (Avg 0.3059) L_sup:0.237 L_unsup:0.054 L_LV:0.557 IoU:0.670 (Avg 0.6680) Dice:0.8025 (Avg 0.7999) LR 2.85e-04 (AvgTime 0.6)
+   [Train] Epoch: [8][5/9]  Loss:0.288 (Avg 0.3023) L_sup:0.232 L_unsup:0.050 L_LV:0.550 IoU:0.704 (Avg 0.6752) Dice:0.8249 (Avg 0.8049) LR 2.85e-04 (AvgTime 0.5)
+   [Train] Epoch: [8][6/9]  Loss:0.345 (Avg 0.3095) L_sup:0.290 L_unsup:0.054 L_LV:0.545 IoU:0.636 (Avg 0.6687) Dice:0.7775 (Avg 0.8003) LR 2.85e-04 (AvgTime 0.5)
+   [Train] Epoch: [8][7/9]  Loss:0.309 (Avg 0.3094) L_sup:0.252 L_unsup:0.058 L_LV:0.562 IoU:0.697 (Avg 0.6728) Dice:0.8193 (Avg 0.8030) LR 2.85e-04 (AvgTime 0.5)
+   [Train] Epoch: [8][8/9]  Loss:0.299 (Avg 0.3080) L_sup:0.240 L_unsup:0.061 L_LV:0.575 IoU:0.677 (Avg 0.6733) Dice:0.8073 (Avg 0.8036) LR 2.85e-04 (AvgTime 0.5)
+   [Train] Epoch: [8][9/9]  Loss:0.314 (Avg 0.3087) L_sup:0.258 L_unsup:0.051 L_LV:0.552 IoU:0.660 (Avg 0.6718) Dice:0.7950 (Avg 0.8026) LR 2.85e-04 (AvgTime 0.4)
+   Epoch Summary: L_sup=0.2523, L_unsup=0.0541, L_LV=0.5557
+Validation
+   [Val] Epoch: [8][1/3]  Loss:0.509 (Avg 0.5093) IoU:0.363 (Avg 0.3631) Dice:0.4696 (Avg 0.4696) (AvgTime 0.9)   
+   [Val] Epoch: [8][2/3]  Loss:0.377 (Avg 0.4430) IoU:0.594 (Avg 0.4787) Dice:0.7454 (Avg 0.6075) (AvgTime 0.5)   
+   [Val] Epoch: [8][3/3]  Loss:0.381 (Avg 0.4223) IoU:0.596 (Avg 0.5178) Dice:0.7453 (Avg 0.6534) (AvgTime 0.3)   
+	 Saving best model, mean dice increased from: 0.6492 to 0.6534
+	 Saving to MoNuSeg/LViT/Test_session_02.16_13h27/models/
+	 early_stopping_count: 0/50
+
+========= Epoch [9/2001] =========
+Test_session_02.16_13h27
+Training with batch size : 2
+Consistency weight: 0.0174
+   [Train] Epoch: [9][1/9]  Loss:0.341 (Avg 0.3414) L_sup:0.285 L_unsup:0.052 L_LV:0.553 IoU:0.635 (Avg 0.6350) Dice:0.7767 (Avg 0.7767) LR 1.86e-04 (AvgTime 1.2)
+   [Train] Epoch: [9][2/9]  Loss:0.281 (Avg 0.3115) L_sup:0.222 L_unsup:0.059 L_LV:0.582 IoU:0.721 (Avg 0.6781) Dice:0.8365 (Avg 0.8066) LR 1.86e-04 (AvgTime 0.6)
+   [Train] Epoch: [9][3/9]  Loss:0.299 (Avg 0.3074) L_sup:0.241 L_unsup:0.058 L_LV:0.572 IoU:0.669 (Avg 0.6751) Dice:0.8014 (Avg 0.8049) LR 1.86e-04 (AvgTime 0.5)
+   [Train] Epoch: [9][4/9]  Loss:0.299 (Avg 0.3052) L_sup:0.243 L_unsup:0.054 L_LV:0.550 IoU:0.664 (Avg 0.6724) Dice:0.7980 (Avg 0.8031) LR 1.86e-04 (AvgTime 0.6)
+   [Train] Epoch: [9][5/9]  Loss:0.307 (Avg 0.3055) L_sup:0.251 L_unsup:0.058 L_LV:0.548 IoU:0.670 (Avg 0.6718) Dice:0.8020 (Avg 0.8029) LR 1.86e-04 (AvgTime 0.5)
+   [Train] Epoch: [9][6/9]  Loss:0.306 (Avg 0.3056) L_sup:0.250 L_unsup:0.057 L_LV:0.554 IoU:0.698 (Avg 0.6762) Dice:0.8191 (Avg 0.8056) LR 1.86e-04 (AvgTime 0.4)
+   [Train] Epoch: [9][7/9]  Loss:0.319 (Avg 0.3076) L_sup:0.263 L_unsup:0.057 L_LV:0.555 IoU:0.650 (Avg 0.6724) Dice:0.7874 (Avg 0.8030) LR 1.86e-04 (AvgTime 0.5)
+   [Train] Epoch: [9][8/9]  Loss:0.292 (Avg 0.3056) L_sup:0.235 L_unsup:0.061 L_LV:0.557 IoU:0.679 (Avg 0.6732) Dice:0.8085 (Avg 0.8037) LR 1.86e-04 (AvgTime 0.5)
+   [Train] Epoch: [9][9/9]  Loss:0.308 (Avg 0.3059) L_sup:0.251 L_unsup:0.067 L_LV:0.551 IoU:0.697 (Avg 0.6759) Dice:0.8197 (Avg 0.8055) LR 1.86e-04 (AvgTime 0.4)
+   Epoch Summary: L_sup=0.2491, L_unsup=0.0581, L_LV=0.5580
+Validation
+   [Val] Epoch: [9][1/3]  Loss:0.495 (Avg 0.4953) IoU:0.359 (Avg 0.3589) Dice:0.4790 (Avg 0.4790) (AvgTime 0.9)   
+   [Val] Epoch: [9][2/3]  Loss:0.333 (Avg 0.4142) IoU:0.575 (Avg 0.4667) Dice:0.7293 (Avg 0.6042) (AvgTime 0.5)   
+   [Val] Epoch: [9][3/3]  Loss:0.351 (Avg 0.3933) IoU:0.656 (Avg 0.5297) Dice:0.7917 (Avg 0.6667) (AvgTime 0.3)   
+	 Saving best model, mean dice increased from: 0.6534 to 0.6667
+	 Saving to MoNuSeg/LViT/Test_session_02.16_13h27/models/
+	 early_stopping_count: 0/50
+
+========= Epoch [10/2001] =========
+Test_session_02.16_13h27
+Training with batch size : 2
+Consistency weight: 0.0195
+   [Train] Epoch: [10][1/9]  Loss:0.341 (Avg 0.3412) L_sup:0.284 L_unsup:0.057 L_LV:0.563 IoU:0.616 (Avg 0.6160) Dice:0.7624 (Avg 0.7624) LR 1.22e-04 (AvgTime 1.3)
+   [Train] Epoch: [10][2/9]  Loss:0.334 (Avg 0.3375) L_sup:0.279 L_unsup:0.062 L_LV:0.540 IoU:0.652 (Avg 0.6341) Dice:0.7892 (Avg 0.7758) LR 1.22e-04 (AvgTime 0.7)
+   [Train] Epoch: [10][3/9]  Loss:0.262 (Avg 0.3122) L_sup:0.203 L_unsup:0.065 L_LV:0.574 IoU:0.730 (Avg 0.6661) Dice:0.8429 (Avg 0.7982) LR 1.22e-04 (AvgTime 0.5)
+   [Train] Epoch: [10][4/9]  Loss:0.315 (Avg 0.3129) L_sup:0.258 L_unsup:0.066 L_LV:0.558 IoU:0.651 (Avg 0.6625) Dice:0.7888 (Avg 0.7958) LR 1.22e-04 (AvgTime 0.6)
+   [Train] Epoch: [10][5/9]  Loss:0.303 (Avg 0.3109) L_sup:0.245 L_unsup:0.064 L_LV:0.566 IoU:0.708 (Avg 0.6716) Dice:0.8270 (Avg 0.8021) LR 1.22e-04 (AvgTime 0.5)
+   [Train] Epoch: [10][6/9]  Loss:0.289 (Avg 0.3072) L_sup:0.232 L_unsup:0.057 L_LV:0.556 IoU:0.678 (Avg 0.6726) Dice:0.8076 (Avg 0.8030) LR 1.22e-04 (AvgTime 0.5)
+   [Train] Epoch: [10][7/9]  Loss:0.309 (Avg 0.3075) L_sup:0.253 L_unsup:0.054 L_LV:0.553 IoU:0.650 (Avg 0.6694) Dice:0.7878 (Avg 0.8008) LR 1.22e-04 (AvgTime 0.5)
+   [Train] Epoch: [10][8/9]  Loss:0.295 (Avg 0.3059) L_sup:0.237 L_unsup:0.059 L_LV:0.570 IoU:0.681 (Avg 0.6708) Dice:0.8099 (Avg 0.8020) LR 1.22e-04 (AvgTime 0.5)
+   [Train] Epoch: [10][9/9]  Loss:0.302 (Avg 0.3055) L_sup:0.245 L_unsup:0.061 L_LV:0.555 IoU:0.703 (Avg 0.6744) Dice:0.8230 (Avg 0.8043) LR 1.22e-04 (AvgTime 0.5)
+   Epoch Summary: L_sup=0.2483, L_unsup=0.0604, L_LV=0.5594
+Validation
+   [Val] Epoch: [10][1/3]  Loss:0.345 (Avg 0.3452) IoU:0.588 (Avg 0.5884) Dice:0.7408 (Avg 0.7408) (AvgTime 0.9)   
+   [Val] Epoch: [10][2/3]  Loss:0.560 (Avg 0.4525) IoU:0.351 (Avg 0.4696) Dice:0.4400 (Avg 0.5904) (AvgTime 0.5)   
+   [Val] Epoch: [10][3/3]  Loss:0.326 (Avg 0.4105) IoU:0.593 (Avg 0.5107) Dice:0.7443 (Avg 0.6417) (AvgTime 0.3)   
+	 Mean dice:0.6417 does not increase, the best is still: 0.6667 in epoch 9
+	 early_stopping_count: 1/50
+
+========= Epoch [11/2001] =========
+Test_session_02.16_13h27
+Training with batch size : 2
+Consistency weight: 0.0218
+   [Train] Epoch: [11][1/9]  Loss:0.352 (Avg 0.3519) L_sup:0.296 L_unsup:0.063 L_LV:0.550 IoU:0.626 (Avg 0.6256) Dice:0.7696 (Avg 0.7696) LR 1.00e-03 (AvgTime 1.1)
+   [Train] Epoch: [11][2/9]  Loss:0.297 (Avg 0.3243) L_sup:0.238 L_unsup:0.059 L_LV:0.575 IoU:0.680 (Avg 0.6527) Dice:0.8093 (Avg 0.7894) LR 1.00e-03 (AvgTime 0.6)
+   [Train] Epoch: [11][3/9]  Loss:0.276 (Avg 0.3084) L_sup:0.219 L_unsup:0.055 L_LV:0.566 IoU:0.708 (Avg 0.6710) Dice:0.8268 (Avg 0.8019) LR 1.00e-03 (AvgTime 0.5)
+   [Train] Epoch: [11][4/9]  Loss:0.285 (Avg 0.3026) L_sup:0.229 L_unsup:0.072 L_LV:0.549 IoU:0.701 (Avg 0.6784) Dice:0.8227 (Avg 0.8071) LR 1.00e-03 (AvgTime 0.6)
+   [Train] Epoch: [11][5/9]  Loss:0.290 (Avg 0.3001) L_sup:0.235 L_unsup:0.062 L_LV:0.541 IoU:0.686 (Avg 0.6799) Dice:0.8133 (Avg 0.8083) LR 1.00e-03 (AvgTime 0.5)
+   [Train] Epoch: [11][6/9]  Loss:0.335 (Avg 0.3059) L_sup:0.277 L_unsup:0.062 L_LV:0.564 IoU:0.647 (Avg 0.6743) Dice:0.7848 (Avg 0.8044) LR 1.00e-03 (AvgTime 0.4)
+   [Train] Epoch: [11][7/9]  Loss:0.295 (Avg 0.3043) L_sup:0.238 L_unsup:0.066 L_LV:0.548 IoU:0.674 (Avg 0.6743) Dice:0.8053 (Avg 0.8045) LR 1.00e-03 (AvgTime 0.5)
+   [Train] Epoch: [11][8/9]  Loss:0.268 (Avg 0.2998) L_sup:0.210 L_unsup:0.058 L_LV:0.567 IoU:0.733 (Avg 0.6817) Dice:0.8448 (Avg 0.8096) LR 1.00e-03 (AvgTime 0.5)
+   [Train] Epoch: [11][9/9]  Loss:0.355 (Avg 0.3059) L_sup:0.296 L_unsup:0.073 L_LV:0.572 IoU:0.630 (Avg 0.6759) Dice:0.7730 (Avg 0.8055) LR 1.00e-03 (AvgTime 0.4)
+   Epoch Summary: L_sup=0.2486, L_unsup=0.0634, L_LV=0.5591
+Validation
+   [Val] Epoch: [11][1/3]  Loss:0.339 (Avg 0.3390) IoU:0.624 (Avg 0.6239) Dice:0.7661 (Avg 0.7661) (AvgTime 0.9)   
+   [Val] Epoch: [11][2/3]  Loss:0.597 (Avg 0.4680) IoU:0.332 (Avg 0.4777) Dice:0.4350 (Avg 0.6005) (AvgTime 0.5)   
+   [Val] Epoch: [11][3/3]  Loss:0.293 (Avg 0.4098) IoU:0.630 (Avg 0.5284) Dice:0.7727 (Avg 0.6579) (AvgTime 0.3)   
+	 Mean dice:0.6579 does not increase, the best is still: 0.6667 in epoch 9
+	 early_stopping_count: 2/50
+
+========= Epoch [12/2001] =========
+Test_session_02.16_13h27
+Training with batch size : 2
+Consistency weight: 0.0242
+   [Train] Epoch: [12][1/9]  Loss:0.288 (Avg 0.2881) L_sup:0.230 L_unsup:0.061 L_LV:0.569 IoU:0.676 (Avg 0.6759) Dice:0.8065 (Avg 0.8065) LR 9.78e-04 (AvgTime 1.2)
+   [Train] Epoch: [12][2/9]  Loss:0.298 (Avg 0.2928) L_sup:0.239 L_unsup:0.061 L_LV:0.571 IoU:0.712 (Avg 0.6938) Dice:0.8297 (Avg 0.8181) LR 9.78e-04 (AvgTime 0.7)
+   [Train] Epoch: [12][3/9]  Loss:0.327 (Avg 0.3043) L_sup:0.268 L_unsup:0.057 L_LV:0.576 IoU:0.638 (Avg 0.6752) Dice:0.7789 (Avg 0.8050) LR 9.78e-04 (AvgTime 0.5)
+   [Train] Epoch: [12][4/9]  Loss:0.336 (Avg 0.3123) L_sup:0.278 L_unsup:0.058 L_LV:0.570 IoU:0.641 (Avg 0.6667) Dice:0.7791 (Avg 0.7985) LR 9.78e-04 (AvgTime 0.6)
+   [Train] Epoch: [12][5/9]  Loss:0.282 (Avg 0.3062) L_sup:0.226 L_unsup:0.069 L_LV:0.544 IoU:0.689 (Avg 0.6711) Dice:0.8152 (Avg 0.8019) LR 9.78e-04 (AvgTime 0.5)
+   [Train] Epoch: [12][6/9]  Loss:0.361 (Avg 0.3153) L_sup:0.301 L_unsup:0.068 L_LV:0.584 IoU:0.626 (Avg 0.6636) Dice:0.7699 (Avg 0.7965) LR 9.78e-04 (AvgTime 0.5)
+   [Train] Epoch: [12][7/9]  Loss:0.334 (Avg 0.3179) L_sup:0.276 L_unsup:0.060 L_LV:0.565 IoU:0.646 (Avg 0.6611) Dice:0.7850 (Avg 0.7949) LR 9.78e-04 (AvgTime 0.5)
+   [Train] Epoch: [12][8/9]  Loss:0.297 (Avg 0.3153) L_sup:0.239 L_unsup:0.068 L_LV:0.569 IoU:0.691 (Avg 0.6649) Dice:0.8168 (Avg 0.7976) LR 9.78e-04 (AvgTime 0.5)
+   [Train] Epoch: [12][9/9]  Loss:0.294 (Avg 0.3130) L_sup:0.237 L_unsup:0.080 L_LV:0.552 IoU:0.671 (Avg 0.6656) Dice:0.8027 (Avg 0.7982) LR 9.78e-04 (AvgTime 0.4)
+   Epoch Summary: L_sup=0.2548, L_unsup=0.0645, L_LV=0.5667
+Validation
+   [Val] Epoch: [12][1/3]  Loss:0.343 (Avg 0.3428) IoU:0.586 (Avg 0.5862) Dice:0.7391 (Avg 0.7391) (AvgTime 0.9)   
+   [Val] Epoch: [12][2/3]  Loss:0.589 (Avg 0.4658) IoU:0.345 (Avg 0.4656) Dice:0.4252 (Avg 0.5821) (AvgTime 0.5)   
+   [Val] Epoch: [12][3/3]  Loss:0.307 (Avg 0.4130) IoU:0.587 (Avg 0.5060) Dice:0.7391 (Avg 0.6344) (AvgTime 0.3)   
+	 Mean dice:0.6344 does not increase, the best is still: 0.6667 in epoch 9
+	 early_stopping_count: 3/50
+
+========= Epoch [13/2001] =========
+Test_session_02.16_13h27
+Training with batch size : 2
+Consistency weight: 0.0270

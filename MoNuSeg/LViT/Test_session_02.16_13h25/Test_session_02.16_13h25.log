@@ -1,0 +1,23 @@
+Semi-supervised mode: 6 labeled, 18 unlabeled
+LViT
+transformer head num: 4
+transformer layers num: 4
+transformer expand ratio: 4
+EMA decay: 0.99, LV Loss weight: 0.1
+log dir: 
+
+========= Epoch [1/2001] =========
+Test_session_02.16_13h25
+Training with batch size : 2
+Consistency weight: 0.0067
+   [Train] Epoch: [1][1/9]  Loss:0.645 (Avg 0.6449) L_sup:0.596 L_unsup:0.584 L_LV:0.450 IoU:0.114 (Avg 0.1136) Dice:0.2029 (Avg 0.2029) LR 1.00e-03 (AvgTime 4.3)
+   [Train] Epoch: [1][2/9]  Loss:0.580 (Avg 0.6123) L_sup:0.530 L_unsup:0.704 L_LV:0.451 IoU:0.277 (Avg 0.1951) Dice:0.4332 (Avg 0.3181) LR 1.00e-03 (AvgTime 2.2)
+   [Train] Epoch: [1][3/9]  Loss:0.603 (Avg 0.6092) L_sup:0.550 L_unsup:0.820 L_LV:0.474 IoU:0.283 (Avg 0.2244) Dice:0.4255 (Avg 0.3539) LR 1.00e-03 (AvgTime 1.5)
+   [Train] Epoch: [1][4/9]  Loss:0.515 (Avg 0.5856) L_sup:0.462 L_unsup:0.791 L_LV:0.469 IoU:0.433 (Avg 0.2765) Dice:0.5964 (Avg 0.4145) LR 1.00e-03 (AvgTime 1.4)
+   [Train] Epoch: [1][5/9]  Loss:0.534 (Avg 0.5753) L_sup:0.480 L_unsup:0.806 L_LV:0.484 IoU:0.411 (Avg 0.3034) Dice:0.5816 (Avg 0.4479) LR 1.00e-03 (AvgTime 1.1)
+   [Train] Epoch: [1][6/9]  Loss:0.451 (Avg 0.5545) L_sup:0.398 L_unsup:0.823 L_LV:0.476 IoU:0.562 (Avg 0.3465) Dice:0.7188 (Avg 0.4931) LR 1.00e-03 (AvgTime 1.0)
+   [Train] Epoch: [1][7/9]  Loss:0.414 (Avg 0.5345) L_sup:0.359 L_unsup:0.758 L_LV:0.506 IoU:0.575 (Avg 0.3791) Dice:0.7300 (Avg 0.5269) LR 1.00e-03 (AvgTime 1.0)
+   [Train] Epoch: [1][8/9]  Loss:0.424 (Avg 0.5207) L_sup:0.368 L_unsup:0.917 L_LV:0.497 IoU:0.563 (Avg 0.4021) Dice:0.7198 (Avg 0.5510) LR 1.00e-03 (AvgTime 0.9)
+   [Train] Epoch: [1][9/9]  Loss:0.453 (Avg 0.5132) L_sup:0.399 L_unsup:0.681 L_LV:0.493 IoU:0.493 (Avg 0.4122) Dice:0.6596 (Avg 0.5631) LR 1.00e-03 (AvgTime 0.8)
+   Epoch Summary: L_sup=0.4602, L_unsup=0.7648, L_LV=0.4777
+Validation
