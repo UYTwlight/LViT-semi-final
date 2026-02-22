@@ -4,6 +4,19 @@ import torch.nn as nn
 import time
 from tensorboardX import SummaryWriter
 import os
+import logging
+
+# Suppress BERT/HuggingFace HTTP request spam, warnings, and progress bars
+os.environ['HF_HUB_DISABLE_TELEMETRY'] = '1'
+os.environ['HF_HUB_DISABLE_PROGRESS_BARS'] = '1'
+os.environ['TRANSFORMERS_VERBOSITY'] = 'error'
+os.environ['SAFETENSORS_FAST_GPU'] = '0'
+logging.getLogger('httpx').setLevel(logging.WARNING)
+logging.getLogger('huggingface_hub').setLevel(logging.WARNING)
+logging.getLogger('transformers').setLevel(logging.ERROR)
+logging.getLogger('urllib3').setLevel(logging.WARNING)
+logging.getLogger('tqdm').setLevel(logging.WARNING)
+
 import numpy as np
 import random
 import copy
@@ -219,14 +232,14 @@ def main_loop(batch_size=config.batch_size, model_type='', tensorboard=True):
     best_epoch = 1
     
     
-    # Store text embeddings from labeled data for LV Loss
+    # Store text embeddings from labeled data for LV Loss (semi-supervised only)
     text_bank = []
     label_bank = []
-    for batch, _ in labeled_loader:
-        text_bank.append(batch['text'].cpu())
-        label_bank.append(batch['label'].cpu())
-    
     epi_pseudo_labels = {}
+    if config.semi_supervised:
+        for batch, _ in labeled_loader:
+            text_bank.append(batch['text'].cpu())
+            label_bank.append(batch['label'].cpu())
 
     for epoch in range(config.epochs):  # loop over the dataset multiple times
         logger.info('\n========= Epoch [{}/{}] ========='.format(epoch + 1, config.epochs + 1))

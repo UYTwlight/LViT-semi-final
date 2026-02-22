@@ -15,7 +15,7 @@ os.environ['PYTHONHASHSEED'] = str(seed)
 cosineLR = True
 n_channels = 3
 n_labels = 1
-epochs = 500
+epochs = 2000
 img_size = 224
 print_frequency = 1
 save_frequency = 5000
@@ -30,8 +30,8 @@ batch_size = 64
 ##########################################################################
 # Semi-Supervised Learning configs (UPDATED)
 ##########################################################################
-semi_supervised = True
-labeled_ratio = 0.1
+semi_supervised = False
+labeled_ratio = 0.5
 beta = 0.99
 
 warmup_epochs = 50       # 50 epoch đầu chỉ chạy Supervised
@@ -68,4 +68,4 @@ def get_CTranS_config():
     config.n_classes = 1
     return config
 
-test_session = "Test_session_02.18_18h50"
+test_session = "BioBERT_ACI_02.21_13h19"
