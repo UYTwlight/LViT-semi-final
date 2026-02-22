@@ -169,7 +169,7 @@ class VisionTransformer(nn.Module):  # Transformer-branch
         self.head = nn.Linear(embed_dim, num_classes) if num_classes > 0 else nn.Identity()
         self.CTBN = ConvTransBN(in_channels=embed_dim, out_channels=embed_dim//2)
         self.CTBN2 = ConvTransBN(in_channels=embed_dim*2, out_channels=embed_dim)
-        self.CTBN3 = ConvTransBN(in_channels=10, out_channels=196)
+        self.CTBN3 = ConvTransBN(in_channels=50, out_channels=196)
 
     def forward(self, x, skip_x, text, reconstruct=False):
         if not reconstruct:
